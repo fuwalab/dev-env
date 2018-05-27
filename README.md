@@ -23,8 +23,8 @@ This tool is a simple developing platform based on Vagrant and Docker.
         │   └── tasks
         │       └── main.yml
         ├── misc
-            └── tasks
-                └── main.yml
+        │   └── tasks
+        │       └── main.yml
         └── system
             └── tasks
                 └── main.yml
