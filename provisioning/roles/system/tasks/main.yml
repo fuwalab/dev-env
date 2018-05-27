@@ -1,0 +1,9 @@
+- name: Update yum packages
+  yum:
+    name: '*'
+    state: latest
+  become: yes
+- name: Install Dev Tools
+  yum:
+    name: '@Development tools'
+  become: yes

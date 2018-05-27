@@ -1,0 +1,4 @@
+- name: Download composer.phar
+  shell: 'curl -sS https://getcomposer.org/composer.phar > /usr/local/bin/composer'
+- name: Add execute permission
+  shell: 'chmod +x /usr/local/bin/composer'
