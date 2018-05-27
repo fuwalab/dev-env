@@ -5,7 +5,6 @@
   <title>Title</title>
 </head>
 <body>
-  test
   <?php
     echo phpinfo();
   ?>
