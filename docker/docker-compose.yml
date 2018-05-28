@@ -10,6 +10,7 @@ services:
       - ./data:/var/www/html
     depends_on:
       - php
+    restart: always
   mysql:
     container_name: mysql
     image: mysql:5.7.21
@@ -19,6 +20,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - db-data:/var/lib/mysql
+    restart: always
   php:
     container_name: php
     build: ./php
@@ -26,5 +28,6 @@ services:
       - ./data:/var/www/html
     depends_on:
       - mysql
+    restart: always
 volumes:
   db-data:
