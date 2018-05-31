@@ -1,5 +1,24 @@
 version: '3'
 services:
+  go:
+    container_name: go
+    image: golang:1.10-alpine
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/go:/go/src
+    tty: true
+    depends_on:
+      - mongo
+    restart: always
+
+  mongo:
+    container_name: mongo
+    image: mongo:3.7
+    volumes:
+      - ./data:/var/www/html
+    restart: always
+
   nginx:
     container_name: nginx
     image: nginx:stable-alpine
@@ -26,6 +45,8 @@ services:
   php:
     container_name: php
     build: ./php
+    ports:
+      - "8000:8000"
     volumes:
       - ./data:/var/www/html
     depends_on:

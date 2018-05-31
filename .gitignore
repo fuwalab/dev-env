@@ -1,3 +1,5 @@
 .idea
 .vagrant
 playbook.retry
+docker/data/*/*
+!docker/data/*/sample_project
