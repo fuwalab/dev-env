@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "dev-env.fuwalab"
   config.hostsupdater.aliases = [
       "dev-env.fuwalab",
+      "php.dev-env.fuwalab",
       "go.dev-env.fuwalab",
   ]
 
