@@ -3,4 +3,3 @@
   roles:
     - system
     - docker
-    - misc
