@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
   config.hostsupdater.aliases = [
       "dev-env.fuwalab",
       "php.dev-env.fuwalab",
+      "wp.dev-env.fuwalab",
       "go.dev-env.fuwalab",
   ]
 
