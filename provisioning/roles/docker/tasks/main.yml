@@ -27,7 +27,3 @@
 - name: Run docker service
   command: "systemctl start docker"
   become: yes
-- name: Run Docker Projects
-  shell: "cd /vagrant/docker; /usr/local/bin/docker-compose up -d"
-  become: yes
-
