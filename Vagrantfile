@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
       "dev-env.fuwalab",
       "php.dev-env.fuwalab",
       "wp.dev-env.fuwalab",
+      "wplocal.dev-env.fuwalab",
       "go.dev-env.fuwalab",
   ]
 
