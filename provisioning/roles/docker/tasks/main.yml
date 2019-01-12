@@ -27,3 +27,5 @@
 - name: Run docker service
   command: "systemctl start docker"
   become: yes
+- name: Run docker containers
+  shell: "docker-compose -f /vagrant/docker/docker-compose.yml up -d"
